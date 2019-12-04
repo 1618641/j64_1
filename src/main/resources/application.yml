@@ -1,0 +1,16 @@
+server:
+  port: 7777
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/mg
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  thymeleaf:
+    encoding: UTF-8
+    mode: html
+    cache: false
+mybatis:
+  type-aliases-package: org.java.entity
+  mapper-locations: classpath:mapper/*Mapper.xml
